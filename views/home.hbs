@@ -1,8 +1,16 @@
 <ul >
   {{#events}}
+    <style>
+        body {background-color: rgb(220, 217, 217);}
+        h2   {color: rgb(40, 8, 145);}
+        p    {color: rgb(82, 13, 13);
+              font-family: verdana;
+              font-size: 90%;
+              font-weight: bold;}
+     </style>
     <li>
         <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
+        <p strong>{{ description }}</p>
         <p>Location: {{ location }}</p>
         <p>Likes: {{ likes }}
         <form method="POST" action="/event/like">
